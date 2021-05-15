@@ -4,3 +4,22 @@
 
  ## In Vendure config
  Add above plugin in src and config into vendure config as mentioned.
+
+ ```typescript
+import { productInStockFilterPlugin } from "product-instock-filter-plugin";
+
+export const config: VendureConfig = {
+  ...
+  plugins: [
+    ...,
+    productInStockFilterPlugin
+  ]
+}
+```
+
+```Query
+query{
+  products(options:{take:4, inStock:true}):Product!
+}
+```
+Above query will not return product which does not have stock.
