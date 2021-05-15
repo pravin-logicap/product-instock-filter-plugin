@@ -3,10 +3,10 @@
  one-off plugin can be used for spacific project by simply nest those plugins into the project source, as is demonstrated by the [real-world-vendure folder structure](https://github.com/vendure-ecommerce/real-world-vendure)
 
  ## In Vendure config
- Add above plugin in src and config into vendure config as mentioned.
+ Add above plugin in src and add plugin vendure-config as mentioned.
 
  ```typescript
-import { productInStockFilterPlugin } from "product-instock-filter-plugin";
+import { productInStockFilterPlugin } from "./product-instock-filter-plugin/product-instock-filter-plugin";
 
 export const config: VendureConfig = {
   ...

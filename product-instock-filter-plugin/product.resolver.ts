@@ -4,13 +4,7 @@ import {
     QueryProductsArgs
 } from '@vendure/common/lib/generated-types';
 import { PaginatedList } from '@vendure/common/lib/shared-types';
-import { Translated } from '@vendure/core/src/common/types/locale-types';
-import { Product } from '@vendure/core/src/entity/product/product.entity';
-import { ProductService } from '@vendure/core/src/service/services/product.service';
-import { ProductVariantService } from '@vendure/core/src/service/services/product-variant.service';
-import { Allow } from '@vendure/core';
-import { RequestContext } from '@vendure/core/src/api/common/request-context';
-import { Ctx } from '@vendure/core';
+import { Ctx, Translated, Product, ProductService, ProductVariantService, Allow, RequestContext } from '@vendure/core';
 
 @Resolver()
 export class ProductResolver {
